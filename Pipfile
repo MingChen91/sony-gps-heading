@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 pynmea2 = "1.18.0"
+matplotlib = "*"
 
 [dev-packages]
 
