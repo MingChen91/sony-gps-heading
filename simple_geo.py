@@ -49,12 +49,11 @@ class SimpleProjection(object):
 
 
 def cartesion_mag(p):
-    return math.sqrt(p.x*p.x + p.y * p.y)
+    return math.sqrt(p.x * p.x + p.y * p.y)
 
 
-def calculate_delta(p1: GeoPostion, p2: GeoPostion ):
+def calculate_delta(p1: GeoPostion, p2: GeoPostion):
     projection = SimpleProjection(p1)
     pp = projection(p2)
     heading = math.degrees(math.atan2(pp.x, pp.y))
     return cartesion_mag(pp), heading
-

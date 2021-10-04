@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 pynmea2 = "1.18.0"
 matplotlib = "*"
+shapely = "*"
+pandas = "*"
+geopandas = "*"
 
 [dev-packages]
 
